@@ -12,15 +12,18 @@
 using namespace std;
 
 namespace ariel
-{
+{   
+    // Default and minimal size for a message board
     const int DEFAULT_SIZE = 1000;
     const int MIN_SIZE = 1;
     
+    // Default constructor
     Board::Board(){
         this->rows = DEFAULT_SIZE;
         this->cols = DEFAULT_SIZE;
     }
 
+    // Constructor
     Board::Board(unsigned int rows, unsigned int cols){   
         
         if(rows < MIN_SIZE){
@@ -35,16 +38,22 @@ namespace ariel
         this->cols = cols;
     }
     
+    // Destructor
     Board::~Board(){}
 
+    // This method will get row, column, direction and a message as parameters and posts the message in the 
+    // appropriate location and diraction in this message board
     int Board::post(unsigned int row, unsigned int col, Direction dir, string msg){
         return 0;
     }
 
+    // This method get row, column, direction and length of a message as parameters and returns the message in the 
+    // appropriate location and diraction in this message board
     string Board::read(unsigned int row, unsigned int col, Direction dir, unsigned int len){
         return " ";
     }
 
+    // This message will print out the entire message board
     void Board::show(){}
 
 }
