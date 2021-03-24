@@ -35,3 +35,9 @@ solution*
 *.app
 demo
 test
+
+# Visual Studio Files
+.vscode/
+
+# Apple files
+.DS_Store
