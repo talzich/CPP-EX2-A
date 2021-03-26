@@ -31,5 +31,11 @@ namespace ariel{
             // This message will print out the entire message board
             void show();
 
+            // Returns number of rows and columns of this board
+            int get_rows();
+            int get_cols();
+
+            
+
     };
 }
